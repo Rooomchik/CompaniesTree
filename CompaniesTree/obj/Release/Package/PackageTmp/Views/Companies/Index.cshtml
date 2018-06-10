@@ -1,0 +1,95 @@
+﻿@model CompaniesTree.Models.CompaniesListModel
+
+@{
+    ViewBag.Title = "Companies Tree";
+}
+<div class="center"><h1>Companies Tree</h1></div>
+
+@if (!Model.Companies.Any())
+{
+    <div class="text_center">
+        No nodes found. 
+        <a href="#" onclick="openAdd()">Add</a> a first node.
+    </div>
+}
+else
+{
+    <div class="margin_center">
+        <div>
+            <div class="add_root inline" title="Add" onclick="openAdd()">
+            </div> 
+            <div class="drop inline root">
+                Main
+            </div>   
+        </div>
+        @Html.Partial("_TreeList", Model)
+    </div>
+}
+
+<div class="center">&copy;Test Application</div>
+
+@using(Html.BeginForm("Move","Companies",FormMethod.Post,new {id="MoveForm", @class="no_display"}))
+{
+    @Html.AntiForgeryToken()
+    <input type="hidden" id="newParentId" name="newParentId" />
+    <input type="hidden" id="nodeId" name="nodeId" />
+}
+
+<div id="overlay" class="no_display">
+<div class="overlay"></div>
+    <div class="panel_surface">
+    <div class="panel">
+        @using (Html.BeginForm("Add", "Companies", FormMethod.Post, new { id = "AddForm" }))
+        {
+            @Html.AntiForgeryToken()
+            <span style="font-weight:bold; font-size:16px;">Title</span>
+            <input type="hidden" id="parentId" name="parentId" />
+            <input id="title" name="title" type="text" autocomplete="off" />
+            <span style="font-weight:bold; font-size:16px;">Earnings</span>
+            <input id="earnings" name="earnings" type="number" autocomplete="off" />
+            <div style="display:inline;">
+                <button type="button" onclick="checkAndAdd()">Add</button>
+                <button type="button" onclick="$('#overlay').hide();">Close</button>
+            </div>
+        }
+    </div>
+        </div>
+</div>
+
+<div id="overlayUpdate" class="no_display">
+    <div class="overlayUpdate"></div>
+    <div class="panel_surface">
+        <div class="panel">
+            @using (Html.BeginForm("Update", "Companies", FormMethod.Post, new { id = "UpdateForm" }))
+            {
+                @Html.AntiForgeryToken()
+                <span style="font-weight:bold; font-size:16px;">Title</span>
+                <input id="nodeIdToUpdate" name="nodeIdToUpdate" type="hidden" />
+                <input id="titleToUpdate" name="titleToUpdate" type="text"/>
+                <span style="font-weight:bold; font-size:16px;">Earnings</span>
+                <input id="earningsToUpdate" name="earningsToUpdate" type="number"/>
+                <div style="display:inline;">
+                    <button type="button" onclick="checkAndUpdate()">Update</button>
+                    <button type="button" onclick="$('#overlayUpdate').hide();">Close</button>
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts
+{
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('a.drag').draggable({ helper: 'clone' });
+            $('div.drop').droppable({ 
+                hoverClass: 'droppable-hover',
+                drop: function (event, ui) {
+                    $('#newParentId').val($(this).attr('parent-id'));
+                    $('#nodeId').val($(ui.draggable).attr('node-id'));
+                    $('#MoveForm').submit();
+                }
+            });
+        });
+    </script>
+}

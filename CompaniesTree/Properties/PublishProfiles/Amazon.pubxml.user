@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <EncryptedPassword>AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAMHEr2Q6trkq/5PEK2nIP7AAAAAACAAAAAAAQZgAAAAEAACAAAADgFNyHFMrvqNdqJcMkpOPrNk28U+h38wkwQHw4hq2tnAAAAAAOgAAAAAIAACAAAAD1Fw2ctYh/YlciaBmstswyNr3oGFZu2DchnAB/rzPFjSAAAAAgxlTJSpLmvpS+YxSlwDXYZARaGprgdbCdUOjOPEr070AAAABqt/PeUZbPOHS6Da8b2KXxvAfcKtoBLVxFncCwCU2Fpso56FCaSOJ3seogF5Fn7mIoZDEo9+o/y1sf5+fwGDdL</EncryptedPassword>
+    <_PublishTargetUrl>C:\Users\User\Desktop\aaaa</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/Companiestree.dll">
+      <publishTime>06/10/2018 23:49:48</publishTime>
+    </File>
+    <File Include="bin/Companiestree.pdb">
+      <publishTime>06/10/2018 23:49:48</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/System.Net.Http.Formatting.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Http.WebHost.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>06/10/2018 20:38:39</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>06/10/2018 01:35:05</publishTime>
+    </File>
+    <File Include="Images/add.png">
+      <publishTime>06/10/2018 18:37:14</publishTime>
+    </File>
+    <File Include="Images/remove.png">
+      <publishTime>06/10/2018 18:31:23</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.js">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-1.7.1.min.js">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.20.js">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery-ui-1.8.20.min.js">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.js">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.unobtrusive-ajax.min.js">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Scripts/main.js">
+      <publishTime>06/10/2018 20:28:34</publishTime>
+    </File>
+    <File Include="Scripts/_references.js">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Views/Companies/Index.cshtml">
+      <publishTime>06/10/2018 20:36:44</publishTime>
+    </File>
+    <File Include="Views/Companies/_TreeList.cshtml">
+      <publishTime>06/10/2018 20:13:57</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>12/20/2013 11:01:14</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>06/10/2018 23:49:50</publishTime>
+    </File>
+  </ItemGroup>
+</Project>
